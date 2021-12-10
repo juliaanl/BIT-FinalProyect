@@ -1,0 +1,44 @@
+.mapa {
+  margin-top: 50px;
+  margin-left: 50px;
+  width: 500px;
+  font-family: 'Karla', sans-serif;
+  font-size: 18px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.datos {
+  display:inline-flex;
+  align-items: center;
+  font-family: 'Karla', sans-serif;
+  background-color: #2863bb;
+  margin-top: 30px;
+  width: 100%;
+}
+
+.redes {
+  width: 500px;
+  margin-top: 50px;
+  margin-left: 200px;
+}
+.redes p{
+  display: flex;
+  color: aliceblue;
+  font-weight: bold;
+}
+.about {
+  width: 500px;
+  margin-top: 50px;
+  margin-left: 150px;
+  font-weight: bold;
+}
+
+.copy {
+text-align: center;
+}
+
+.copy p{
+  font-size: 15px;
+  font-family: 'Karla', sans-serif;
+}

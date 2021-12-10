@@ -1,0 +1,53 @@
+<div class="bgComponent">
+  <div class="form">
+    <mat-card class="card">
+      <mat-card-title>Crear tarea</mat-card-title>
+      <mat-card-content>
+        <div class="container">
+          <mat-form-field>
+            <input
+              [(ngModel)]="registerData.name"
+              matInput
+              placeholder="Nombre de la tarea"
+              required
+            />
+          </mat-form-field>
+          <mat-form-field>
+            <input
+              [(ngModel)]="registerData.description"
+              matInput
+              placeholder="Descripción"
+              required
+            />
+          </mat-form-field>
+          <mat-form-field>
+            <input
+              [(ngModel)]="registerData.aditionalInfo"
+              matInput
+              placeholder="Información Adicional"
+              required
+            />
+          </mat-form-field>
+          <mat-form-field>
+            <input
+              [(ngModel)]="registerData.finalDate"
+              type="date"
+              matInput
+              placeholder ="Fecha final "
+              required
+            />
+          </mat-form-field>
+          <input type="file"  (change)="uploadImg($event)" />
+        </div>
+      </mat-card-content>
+      <mat-card-actions>
+        <!-- <button (click)="saveTask()" class="button" mat-raised-button>
+            Create
+          </button> -->
+        <button (click)="saveTaskImg()" class="button" mat-raised-button>
+          Crear
+        </button>
+      </mat-card-actions>
+    </mat-card>
+  </div>
+</div>
